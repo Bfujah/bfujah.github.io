@@ -69,7 +69,7 @@
       </div>
       <h1>Olabode T. Ajenifujah</h1>
       <p class="thesis">I build AI agents that manufacturing can <em>trust and certify</em>: the agent plans and explains, while validated models and code decide.</p>
-      <p class="lead">My work spans additive manufacturing, welding and stamping, from multiphysics simulation and machine learning of laser powder bed fusion to tool-using and multi-agent language-model systems that make quality decisions on production data. The goal is one verified-agent platform for smart manufacturing.</p>
+      <p class="lead">Multiphysics simulation, machine learning and tool-using AI agents for additive manufacturing, welding and stamping.</p>
       <div class="btns">
         <a class="btn primary" href="Ajenifujah_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         <a class="btn" href="https://scholar.google.com/citations?hl=en&user=a5dQu_MAAAAJ&view_op=list_works" target="_blank" rel="noopener">Google Scholar</a>
@@ -79,7 +79,51 @@
       </div>
     </div>
 
-    <figure class="platform reveal" aria-label="Diagram of a verified-agent platform connecting manufacturing processes">
+    <figure class="laser-fig reveal">
+      <canvas id="laserCanvas" aria-label="Animation of a laser scanning a powder bed, melting a track and ejecting spatter" role="img"></canvas>
+      <figcaption>Laser powder bed fusion: the laser melts a track and ejects spatter, the process my models predict and my agents optimize.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="world" class="world static" aria-label="From powder to verified decision">
+  <div class="world-sticky">
+    <canvas id="worldCanvas" aria-hidden="true"></canvas>
+    <div class="world-head"><span class="eyebrow">Scroll through the process</span><h2>From powder to a verified decision</h2></div>
+    <div class="world-panels">
+      <div class="world-panel glass on"><span class="eyebrow">01 · Powder</span><h3>A powder bed, particle by particle</h3><p>A discrete element simulation spreads and settles stainless steel powder over the build plate, giving the simulations a realistic, randomly packed bed.</p>
+        <video src="dem_powder.mp4" poster="dem_powder_poster.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="world-panel glass"><span class="eyebrow">02 · Laser</span><h3>Melt pool physics</h3><p>Calibrated multiphysics simulations resolve heat transfer, fluid flow, evaporation and recoil pressure as the laser scans each track.</p></div>
+      <div class="world-panel glass"><span class="eyebrow">03 · Spatter</span><h3>Why droplets eject</h3><p>Explainable machine learning, validated against experiments, learns when spatter forms, and turns it into process maps that are fast to query.</p></div>
+      <div class="world-panel glass"><span class="eyebrow">04 · Agent</span><h3>The agent explains, code decides</h3><p>Validated models become tools. Agents above the machine plan and explain, while every number and decision comes from a model or from code.</p></div>
+    </div>
+    <div class="world-progress" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<section id="approach" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Approach</span>
+    <h2>A clear division of labor between language and physics</h2>
+    <p class="lead">Agents are fluent but can invent numbers. Mine are built so every number and decision traces back to a validated model or to code.</p>
+    <div class="steps">
+      <div class="step reveal"><span class="num">01</span><h3>The agent orchestrates and explains</h3><p>Reads the request, picks the tools, explains the result.</p></div>
+      <div class="step reveal"><span class="num">02</span><h3>Validated models and code decide</h3><p>Surrogates, monitors and plant rules run in code.</p></div>
+      <div class="step reveal"><span class="num">03</span><h3>Every claim is graded in code</h3><p>Exact-match keys, replayed tool calls, pre-registered studies.</p></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="research-head">
+    <div>
+    <span class="eyebrow">Research program</span>
+    <h2>Toward one verified-agent platform for smart manufacturing</h2>
+    <p class="lead">One pattern, many processes: proven on welding, LPBF and stamping, next on machining, semiconductor and chemical manufacturing.</p>
+    </div>
+    <figure class="platform reveal small" aria-label="Diagram of a verified-agent platform connecting manufacturing processes">
       <svg viewBox="0 0 460 440" role="img">
         <title>One verified-agent platform across manufacturing processes</title>
         <circle class="dg-orbit" cx="230" cy="210" r="150"/>
@@ -122,61 +166,15 @@
         </g>
       </svg>
     </figure>
-  </div>
-</header>
-
-<section id="world" class="world static" aria-label="From powder to verified decision">
-  <div class="world-sticky">
-    <canvas id="worldCanvas" aria-hidden="true"></canvas>
-    <div class="world-head"><span class="eyebrow">Scroll through the process</span><h2>From powder to a verified decision</h2></div>
-    <div class="world-panels">
-      <div class="world-panel glass on"><span class="eyebrow">01 · Powder</span><h3>A powder bed, particle by particle</h3><p>A discrete element simulation spreads and settles stainless steel powder over the build plate, giving the simulations a realistic, randomly packed bed.</p>
-        <video src="dem_powder.mp4" poster="dem_powder_poster.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
-      <div class="world-panel glass"><span class="eyebrow">02 · Laser</span><h3>Melt pool physics</h3><p>Calibrated multiphysics simulations resolve heat transfer, fluid flow, evaporation and recoil pressure as the laser scans each track.</p></div>
-      <div class="world-panel glass"><span class="eyebrow">03 · Spatter</span><h3>Why droplets eject</h3><p>Explainable machine learning, validated against experiments, learns when spatter forms, and turns it into process maps that are fast to query.</p></div>
-      <div class="world-panel glass"><span class="eyebrow">04 · Agent</span><h3>The agent explains, code decides</h3><p>Validated models become tools. Agents above the machine plan and explain, while every number and decision comes from a model or from code.</p></div>
     </div>
-    <div class="world-progress" aria-hidden="true"><span></span></div>
-  </div>
-</section>
-
-<section id="approach" class="alt">
-  <div class="wrap">
-    <span class="eyebrow">Approach</span>
-    <h2>A clear division of labor between language and physics</h2>
-    <p class="lead">Language-model agents let an engineer ask for a prediction, a process map or a quality decision in plain language. They can also sound confident while passing wrong inputs or inventing numbers. In a process that must be certified, that is not acceptable. My agents are built so that every number and decision can be traced to a validated model or to code.</p>
-    <div class="steps">
-      <div class="step reveal"><span class="num">01</span><h3>The agent orchestrates and explains</h3><p>It reads the request, chooses tools and their inputs, and writes the answer for the engineer, with every value taken from the tool record.</p></div>
-      <div class="step reveal"><span class="num">02</span><h3>Validated models and code decide</h3><p>Physics-based surrogates, monitors and plant policies run in code. The agent states the rule; code applies it to every part, weld or layer.</p></div>
-      <div class="step reveal"><span class="num">03</span><h3>Every claim is graded in code</h3><p>Answers are scored by exact match against keys computed in code, tool calls are replayed to locate each failure, and studies are pre-registered.</p></div>
-    </div>
-
-    <h3 style="margin-top:44px">What my studies teach about AI in the physical world</h3>
-    <div class="lessons">
-      <div class="lesson reveal"><b>The weak link is the agent</b>Failures come from how the agent uses validated models, so the agent must be tested on its own.</div>
-      <div class="lesson reveal"><b>Decisions belong in code</b>Language belongs to the agent; computing and deciding belong to models and code.</div>
-      <div class="lesson reveal"><b>Local models can be enough</b>With the right interface, open-weight models on a plant's own hardware can match hosted ones.</div>
-      <div class="lesson reveal"><b>Correct is not always right</b>A policy applied perfectly can still be the wrong physical decision; check against outcomes.</div>
-      <div class="lesson reveal"><b>Split the items, not the expertise</b>Teams scale by dividing the work, and are only as reliable as their weakest member.</div>
-    </div>
-    <p class="muted" style="margin-top:18px;font-size:.9rem">These are the conditions for the human-centric, resilient AI that Industry 5.0 calls for: engineers stay in charge of decisions they can audit, and AI runs where the data are made.</p>
-  </div>
-</section>
-
-<section id="research">
-  <div class="wrap">
-    <span class="eyebrow">Research program</span>
-    <h2>Toward one verified-agent platform for smart manufacturing</h2>
-    <p class="lead">The same pattern has worked for welding quality decisions, LPBF process design and stamping diagnosis. The next step is to show that it is a platform rather than a set of projects, across discrete and continuous manufacturing.</p>
     <div class="thrusts">
       <div class="thrust reveal">
         <span class="tag">THRUST 1</span>
         <h3>Verified agents for process design</h3>
         <p class="muted">Reach a defect-free process window in fewer builds.</p>
         <ul>
-          <li>Agents propose; surrogates and Bayesian optimization run in code</li>
-          <li>Domain checks flag requests outside the training data</li>
-          <li>First study: agents that choose LPBF parameters, graded in code</li>
+          <li>Agents propose, optimizers run in code</li>
+          <li>First study: LPBF parameter selection</li>
         </ul>
       </div>
       <div class="thrust reveal">
@@ -184,9 +182,8 @@
         <h3>In situ sensing, diagnosis and control</h3>
         <p class="muted">Replace part of post-build inspection with auditable decisions.</p>
         <ul>
-          <li>Segment process signals by physical phase; verify fingerprints with engineers</li>
-          <li>Physics-informed generation of rare defects</li>
-          <li>From flagging to closed-loop correction by a verified controller</li>
+          <li>Physics-informed rare-defect data</li>
+          <li>From flagging to closed-loop control</li>
         </ul>
       </div>
       <div class="thrust reveal">
@@ -194,16 +191,12 @@
         <h3>Reliability science across processes</h3>
         <p class="muted">Turn design rules into tested, general principles.</p>
         <ul>
-          <li>Test the same rules on welding, stamping and LPBF together</li>
-          <li>Open, pre-registered benchmarks separating agent and model errors</li>
-          <li>Shadow-mode trials and studies of engineer trust</li>
+          <li>Same rules tested across processes</li>
+          <li>Open, pre-registered benchmarks</li>
         </ul>
       </div>
     </div>
-    <div class="platform-row" aria-label="Processes on the platform">
-      <span class="chip done">Additive manufacturing</span><span class="chip done">Ultrasonic and arc welding</span><span class="chip done">Sheet-metal stamping</span>
-      <span class="chip next">CNC machining</span><span class="chip next">Semiconductor processing</span><span class="chip next">Chemical process manufacturing</span>
-    </div>
+
   </div>
 </section>
 
@@ -211,7 +204,7 @@
   <div class="wrap">
     <span class="eyebrow">Vision · illustrative animation</span>
     <h2>The agentic factory floor</h2>
-    <p class="lead">Where the platform is heading: a team of agents running a mixed manufacturing floor, with stamping, welding, additive manufacturing, machining, inspection and a robot in the loop. Every agent works through validated models, code makes every decision, and the engineer stays in charge.</p>
+    <p class="lead">Where this is heading: a team of agents running a mixed shop floor, with code deciding and the engineer in charge. Pick a scenario.</p>
     <div class="floor-modes" role="group" aria-label="Choose a scenario">
       <button data-mode="production" aria-pressed="true">Optimize production</button>
       <button data-mode="quality" aria-pressed="false">Quality control</button>
@@ -237,7 +230,7 @@
   <div class="wrap">
     <span class="eyebrow">Projects</span>
     <h2>Selected projects</h2>
-    <p class="lead">Click a project for details and figures. Industry-sponsored work is described by its questions and methods; results appear here as they are published.</p>
+    <p class="lead">Click a card for figures and details.</p>
     <div class="filters" role="group" aria-label="Filter projects">
       <button class="filter" data-f="all" aria-pressed="true">All</button>
       <button class="filter" data-f="agents" aria-pressed="false">AI agents</button>
@@ -601,6 +594,7 @@
 </svg>
 <script src="main.js"></script>
 <script src="gradient.js"></script>
+<script src="laser.js"></script>
 <script src="world.js"></script>
 <script src="floor.js"></script>
 </body>

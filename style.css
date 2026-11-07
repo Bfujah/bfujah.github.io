@@ -315,3 +315,29 @@ html.refract .glass { -webkit-backdrop-filter: blur(10px) saturate(180%); backdr
 .world.static .world-head { position: static; margin-bottom: 26px; }
 .world.static .world-panels { position: static; width: auto; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .world.static .world-panel { position: static; opacity: 1; transform: none; }
+
+/* ---------- hero laser animation ---------- */
+.laser-fig { margin: 0; }
+#laserCanvas { width: 100%; aspect-ratio: 5 / 4; display: block; border-radius: 22px;
+  background: radial-gradient(120% 90% at 50% 20%, #1c2b44 0%, #0b121c 75%);
+  box-shadow: 0 24px 60px rgba(15,27,45,.28), inset 0 1px 0 rgba(255,255,255,.12); }
+.laser-fig figcaption { font-size: .82rem; color: var(--muted); margin-top: 10px; text-align: center; }
+
+/* ---------- research head with platform diagram ---------- */
+.research-head { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; }
+.platform.small { max-width: 400px; justify-self: end; margin: 0; }
+@media (max-width: 860px) { .research-head { grid-template-columns: 1fr; } .platform.small { justify-self: center; } }
+
+/* ---------- more motion: staggered reveals, card tilt, hero entrance ---------- */
+.steps .reveal:nth-child(2), .thrusts .reveal:nth-child(2), .grid .reveal:nth-child(3n+2) { transition-delay: .08s; }
+.steps .reveal:nth-child(3), .thrusts .reveal:nth-child(3), .grid .reveal:nth-child(3n) { transition-delay: .16s; }
+.card { transform-style: preserve-3d; will-change: transform; }
+.card .thumb img, .card .thumb svg { transition: transform .5s ease; }
+.card:hover .thumb img, .card:hover .thumb svg { transform: scale(1.04); }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.hero-card > * { animation: rise .7s ease both; }
+.hero-card > *:nth-child(2) { animation-delay: .08s; } .hero-card > *:nth-child(3) { animation-delay: .16s; }
+.hero-card > *:nth-child(4) { animation-delay: .24s; } .hero-card > *:nth-child(5) { animation-delay: .32s; }
+.hero .thesis em { background: linear-gradient(90deg, var(--accent), #ffb36b, var(--accent)); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 4s linear infinite; }
+@keyframes shine { to { background-position: 200% 0; } }
+@media (prefers-reduced-motion: reduce) { .hero-card > *, .hero .thesis em { animation: none; } .card:hover .thumb img { transform: none; } }
