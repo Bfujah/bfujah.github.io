@@ -341,3 +341,57 @@ html.refract .glass { -webkit-backdrop-filter: blur(10px) saturate(180%); backdr
 .hero .thesis em { background: linear-gradient(90deg, var(--accent), #ffb36b, var(--accent)); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: shine 4s linear infinite; }
 @keyframes shine { to { background-position: 200% 0; } }
 @media (prefers-reduced-motion: reduce) { .hero-card > *, .hero .thesis em { animation: none; } .card:hover .thumb img { transform: none; } }
+
+/* ---------- typography and palette adopted from a clean academic style (Inter, navy ink, blue accent) ---------- */
+:root {
+  --bg: #ffffff; --bg-alt: #f2f6fc; --surface: #ffffff; --ink: #192330; --ink-2: #43566f; --muted: #60738b; --line: #dbe5f3;
+  --accent: #2454a0; --accent-soft: #e6eefa; --teal: #1f7a8c; --teal-soft: #e3f1f4; --gold: #b7862b;
+  --serif: "Inter", "Segoe UI", Arial, sans-serif; --sans: "Inter", "Segoe UI", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0d1420; --bg-alt: #121c2b; --surface: #16212f; --ink: #e8eef6; --ink-2: #b9c6d6; --muted: #8b9bb0; --line: #24344a; --accent: #7aa7ff; --accent-soft: #1b2b47; --teal: #5cc2d1; --teal-soft: #13323a; }
+}
+:root[data-theme="dark"] { --bg: #0d1420; --bg-alt: #121c2b; --surface: #16212f; --ink: #e8eef6; --ink-2: #b9c6d6; --muted: #8b9bb0; --line: #24344a; --accent: #7aa7ff; --accent-soft: #1b2b47; --teal: #5cc2d1; --teal-soft: #13323a; }
+body { font-size: 17.5px; line-height: 1.7; }
+h1, h2, h3 { font-family: var(--sans); font-weight: 600; letter-spacing: -0.02em; }
+.hero h1 { letter-spacing: -0.045em; font-weight: 600; }
+h2 { letter-spacing: -0.03em; }
+.hero .thesis { font-family: var(--sans); font-weight: 400; letter-spacing: -0.01em; }
+.eyebrow { color: var(--accent); }
+a { color: var(--accent); }
+.nav ul a { font-weight: 600; font-size: .92rem; color: var(--accent); }
+.nav ul a:hover { color: var(--ink); }
+.btn.primary { background: var(--accent); border-color: var(--accent); }
+.hero .thesis em { background: linear-gradient(90deg, var(--accent), #e0592a, var(--accent)); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.filter[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.floor-modes button[aria-pressed="true"]:not(.play) { background: var(--accent); border-color: var(--accent); }
+.stat b { color: var(--accent); }
+.pubs .me { text-decoration-color: var(--accent); }
+.badge.a { color: var(--accent); border-color: var(--accent); }
+
+/* ---------- platform diagram: larger, connected, animated ---------- */
+.platform.small { max-width: 520px; width: 100%; }
+.dg-orbit { fill: none; stroke: var(--line); stroke-width: 2; stroke-dasharray: none; }
+.dg-link { stroke: var(--line); stroke-width: 2; fill: none; }
+.dg-link.done { stroke: var(--accent); stroke-opacity: .45; }
+.dg-node circle { fill: var(--teal-soft); stroke: var(--teal); stroke-width: 2; }
+.dg-node.done circle { fill: var(--accent-soft); stroke: var(--accent); }
+.dg-node { animation: breathe 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+.dg-text { font-size: 15px; font-weight: 600; fill: var(--ink); font-family: var(--sans); }
+.dg-sub { font-size: 11.5px; fill: var(--ink-2); font-family: var(--sans); }
+.dg-core-text { font-family: var(--sans); font-weight: 600; }
+.dg-pulse { fill: var(--accent); }
+.dg-pulse.back { fill: #e0592a; }
+.dg-orbiter { fill: var(--accent); opacity: .7; }
+@media (prefers-reduced-motion: reduce) { .dg-node { animation: none; } .dg-pulse, .dg-orbiter { display: none; } }
+
+/* ---------- molten pool canvases ---------- */
+.card .thumb.dark { background: #0c1222; }
+.card .thumb canvas.pool-canvas { width: 100%; height: 100%; display: block; }
+.dark-fig { background: #0c1222 !important; border-color: #0c1222 !important; }
+.dark-fig canvas.pool-canvas.big { width: 100%; aspect-ratio: 16 / 8; display: block; border-radius: 8px; }
+.dark-fig figcaption { color: #b9c6d6 !important; }
+.card .thumb.sim { background: #d9dadc; }
+.card .thumb.sim video { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s ease; }
+.card:hover .thumb.sim video { transform: scale(1.04); }

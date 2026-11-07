@@ -25,7 +25,7 @@
     <a class="brand" href="#top" aria-label="Olabode T. Ajenifujah, home">
       <svg class="liquid-logo" viewBox="0 0 64 64" aria-hidden="true">
         <defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9"/></filter>
-        <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0592a"/><stop offset="1" stop-color="#157a8a"/></linearGradient></defs>
+        <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2454a0"/><stop offset="1" stop-color="#e0592a"/></linearGradient></defs>
         <g filter="url(#goo)" fill="url(#lg)">
           <circle cx="32" cy="32" r="17"/>
           <circle cx="32" cy="12" r="7"><animateTransform attributeName="transform" type="rotate" from="0 32 32" to="360 32 32" dur="7s" repeatCount="indefinite"/></circle>
@@ -86,20 +86,6 @@
   </div>
 </header>
 
-<section id="world" class="world static" aria-label="From powder to verified decision">
-  <div class="world-sticky">
-    <canvas id="worldCanvas" aria-hidden="true"></canvas>
-    <div class="world-head"><span class="eyebrow">Scroll through the process</span><h2>From powder to a verified decision</h2></div>
-    <div class="world-panels">
-      <div class="world-panel glass on"><span class="eyebrow">01 · Powder</span><h3>A powder bed, particle by particle</h3><p>A discrete element simulation spreads and settles stainless steel powder over the build plate, giving the simulations a realistic, randomly packed bed.</p>
-        <video src="dem_powder.mp4" poster="dem_powder_poster.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
-      <div class="world-panel glass"><span class="eyebrow">02 · Laser</span><h3>Melt pool physics</h3><p>Calibrated multiphysics simulations resolve heat transfer, fluid flow, evaporation and recoil pressure as the laser scans each track.</p></div>
-      <div class="world-panel glass"><span class="eyebrow">03 · Spatter</span><h3>Why droplets eject</h3><p>Explainable machine learning, validated against experiments, learns when spatter forms, and turns it into process maps that are fast to query.</p></div>
-      <div class="world-panel glass"><span class="eyebrow">04 · Agent</span><h3>The agent explains, code decides</h3><p>Validated models become tools. Agents above the machine plan and explain, while every number and decision comes from a model or from code.</p></div>
-    </div>
-    <div class="world-progress" aria-hidden="true"><span></span></div>
-  </div>
-</section>
 
 <section id="approach" class="alt">
   <div class="wrap">
@@ -124,46 +110,39 @@
     <p class="lead">One pattern, many processes: proven on welding, LPBF and stamping, next on machining, semiconductor and chemical manufacturing.</p>
     </div>
     <figure class="platform reveal small" aria-label="Diagram of a verified-agent platform connecting manufacturing processes">
-      <svg viewBox="0 0 460 440" role="img">
+      <svg viewBox="0 0 520 470" role="img">
         <title>One verified-agent platform across manufacturing processes</title>
-        <circle class="dg-orbit" cx="230" cy="210" r="150"/>
-        <line class="dg-link done" x1="230" y1="210" x2="230" y2="60"/>
-        <line class="dg-link done" x1="230" y1="210" x2="360" y2="135"/>
-        <line class="dg-link done" x1="230" y1="210" x2="360" y2="285"/>
-        <line class="dg-link" x1="230" y1="210" x2="230" y2="360"/>
-        <line class="dg-link" x1="230" y1="210" x2="100" y2="285"/>
-        <line class="dg-link" x1="230" y1="210" x2="100" y2="135"/>
-        <circle class="pulse" cx="230" cy="210" r="88" fill="var(--accent)" opacity=".18"/>
-        <circle class="dg-core" cx="230" cy="210" r="72"/>
-        <text class="dg-core-text" x="230" y="200" text-anchor="middle" font-size="17">Verified</text>
-        <text class="dg-core-text" x="230" y="220" text-anchor="middle" font-size="17">agent</text>
-        <text x="230" y="240" text-anchor="middle" font-size="9.5" fill="var(--bg)" opacity=".75" font-family="Inter, sans-serif">models + code decide</text>
-
-        <g class="ring-done"><circle cx="230" cy="60" r="46" stroke-width="2"/></g>
-        <text class="dg-text" x="230" y="57" text-anchor="middle">Additive</text>
-        <text class="dg-sub" x="230" y="72" text-anchor="middle">LPBF</text>
-        <g class="ring-done"><circle cx="360" cy="135" r="46" stroke-width="2"/></g>
-        <text class="dg-text" x="360" y="132" text-anchor="middle">Welding</text>
-        <text class="dg-sub" x="360" y="147" text-anchor="middle">ultrasonic, arc</text>
-        <g class="ring-done"><circle cx="360" cy="285" r="46" stroke-width="2"/></g>
-        <text class="dg-text" x="360" y="282" text-anchor="middle">Stamping</text>
-        <text class="dg-sub" x="360" y="297" text-anchor="middle">press tonnage</text>
-        <g class="ring-next"><circle cx="230" cy="360" r="46" stroke-width="1.6"/></g>
-        <text class="dg-text" x="230" y="357" text-anchor="middle">Machining</text>
-        <text class="dg-sub" x="230" y="372" text-anchor="middle">CNC</text>
-        <g class="ring-next"><circle cx="100" cy="285" r="46" stroke-width="1.6"/></g>
-        <text class="dg-text" x="100" y="282" text-anchor="middle">Wafer fab</text>
-        <text class="dg-sub" x="100" y="297" text-anchor="middle">semiconductor</text>
-        <g class="ring-next"><circle cx="100" cy="135" r="46" stroke-width="1.6"/></g>
-        <text class="dg-text" x="100" y="132" text-anchor="middle">Chemical</text>
-        <text class="dg-sub" x="100" y="147" text-anchor="middle">process plants</text>
-
-        <g transform="translate(118,428)">
-          <circle cx="0" cy="-4" r="6" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
-          <text class="dg-sub" x="12" y="0">studied</text>
-          <circle cx="92" cy="-4" r="6" fill="var(--surface)" stroke="var(--muted)" stroke-dasharray="3 3" stroke-width="1.6"/>
-          <text class="dg-sub" x="104" y="0">next on the platform</text>
-        </g>
+        <circle class="dg-orbit" cx="260" cy="235" r="175"/>
+        <circle r="4" class="dg-orbiter"><animateMotion dur="14s" repeatCount="indefinite" path="M435 235 A175 175 0 1 1 85 235 A175 175 0 1 1 435 235"/></circle>
+        <path id="lk0" class="dg-link done" d="M260.0 151.0 L260.0 116.0"/>
+        <path id="lk1" class="dg-link done" d="M332.8 193.0 L363.1 175.5"/>
+        <path id="lk2" class="dg-link done" d="M332.8 277.0 L363.1 294.5"/>
+        <path id="lk3" class="dg-link" d="M260.0 319.0 L260.0 354.0"/>
+        <path id="lk4" class="dg-link" d="M187.2 277.0 L156.9 294.5"/>
+        <path id="lk5" class="dg-link" d="M187.2 193.0 L156.9 175.5"/>
+        <circle class="pulse" cx="260" cy="235" r="96" fill="var(--accent)" opacity=".10"/>
+        <circle class="dg-core" cx="260" cy="235" r="82"/>
+        <text class="dg-core-text" x="260" y="227" text-anchor="middle" font-size="21">Verified</text>
+        <text class="dg-core-text" x="260" y="251" text-anchor="middle" font-size="21">agent</text>
+        <text x="260" y="273" text-anchor="middle" font-size="12" fill="var(--bg)" opacity=".8" font-family="Inter, sans-serif">models + code decide</text>
+        <g class="dg-node done" style="animation-delay:0.0s"><circle cx="260.0" cy="60.0" r="54"/><text class="dg-text" x="260.0" y="58.0" text-anchor="middle">Additive</text><text class="dg-sub" x="260.0" y="76.0" text-anchor="middle">LPBF</text></g>
+        <circle r="5" class="dg-pulse out"><animateMotion dur="2.8s" begin="0.00s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#lk0"/></animateMotion></circle>
+        <circle r="5" class="dg-pulse back"><animateMotion dur="2.8s" begin="1.40s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk0"/></animateMotion></circle>
+        <g class="dg-node done" style="animation-delay:0.5s"><circle cx="411.6" cy="147.5" r="54"/><text class="dg-text" x="411.6" y="145.5" text-anchor="middle">Welding</text><text class="dg-sub" x="411.6" y="163.5" text-anchor="middle">ultrasonic, arc</text></g>
+        <circle r="5" class="dg-pulse out"><animateMotion dur="2.8s" begin="0.45s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#lk1"/></animateMotion></circle>
+        <circle r="5" class="dg-pulse back"><animateMotion dur="2.8s" begin="1.85s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk1"/></animateMotion></circle>
+        <g class="dg-node done" style="animation-delay:1.0s"><circle cx="411.6" cy="322.5" r="54"/><text class="dg-text" x="411.6" y="320.5" text-anchor="middle">Stamping</text><text class="dg-sub" x="411.6" y="338.5" text-anchor="middle">press tonnage</text></g>
+        <circle r="5" class="dg-pulse out"><animateMotion dur="2.8s" begin="0.90s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#lk2"/></animateMotion></circle>
+        <circle r="5" class="dg-pulse back"><animateMotion dur="2.8s" begin="2.30s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk2"/></animateMotion></circle>
+        <g class="dg-node" style="animation-delay:1.5s"><circle cx="260.0" cy="410.0" r="54"/><text class="dg-text" x="260.0" y="408.0" text-anchor="middle">Machining</text><text class="dg-sub" x="260.0" y="426.0" text-anchor="middle">CNC</text></g>
+        <circle r="5" class="dg-pulse out"><animateMotion dur="2.8s" begin="1.35s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#lk3"/></animateMotion></circle>
+        <circle r="5" class="dg-pulse back"><animateMotion dur="2.8s" begin="2.75s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk3"/></animateMotion></circle>
+        <g class="dg-node" style="animation-delay:2.0s"><circle cx="108.4" cy="322.5" r="54"/><text class="dg-text" x="108.4" y="320.5" text-anchor="middle">Wafer fab</text><text class="dg-sub" x="108.4" y="338.5" text-anchor="middle">semiconductor</text></g>
+        <circle r="5" class="dg-pulse out"><animateMotion dur="2.8s" begin="1.80s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#lk4"/></animateMotion></circle>
+        <circle r="5" class="dg-pulse back"><animateMotion dur="2.8s" begin="3.20s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk4"/></animateMotion></circle>
+        <g class="dg-node" style="animation-delay:2.5s"><circle cx="108.4" cy="147.5" r="54"/><text class="dg-text" x="108.4" y="145.5" text-anchor="middle">Chemical</text><text class="dg-sub" x="108.4" y="163.5" text-anchor="middle">process plants</text></g>
+        <circle r="5" class="dg-pulse out"><animateMotion dur="2.8s" begin="2.25s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#lk5"/></animateMotion></circle>
+        <circle r="5" class="dg-pulse back"><animateMotion dur="2.8s" begin="3.65s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#lk5"/></animateMotion></circle>
       </svg>
     </figure>
     </div>
@@ -247,7 +226,7 @@
       </button>
 
       <button class="card reveal" data-cat="am sim" data-modal="p-spatter">
-        <div class="thumb"><img src="spatter_framework.png" alt="Framework coupling OpenFOAM, machine learning and FLOW-3D to build a spatter process map" loading="lazy"></div>
+        <div class="thumb sim"><video src="lpbf_sim.mp4" poster="lpbf_sim_poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="OpenFOAM simulation of a melt pool forming under the laser"></video></div>
         <div class="body"><span class="meta">2021 to 2025 · Carnegie Mellon · ARL</span><h3>Spatter mechanism and process window in LPBF</h3><p>High-fidelity multiphysics simulation and explainable machine learning define where and why spatter forms.</p><div class="tags"><span class="tag-s">OpenFOAM</span><span class="tag-s">FLOW-3D</span><span class="tag-s">SHAP</span></div></div>
       </button>
 
@@ -301,18 +280,7 @@
       </button>
 
       <button class="card reveal" data-cat="sim monitor am" data-modal="p-pool">
-        <div class="thumb">
-          <svg viewBox="0 0 320 180" role="img" aria-label="Two-state molten pool model">
-            <rect width="320" height="180" fill="#fff"/>
-            <ellipse cx="96" cy="96" rx="58" ry="26" fill="#fdebe3" stroke="#e0592a" stroke-width="2"/><ellipse cx="96" cy="96" rx="28" ry="12" fill="#e0592a" opacity=".75"/>
-            <text x="96" y="146" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">pool geometry (image state)</text>
-            <rect x="196" y="66" width="104" height="60" rx="10" fill="#e2f2f4" stroke="#157a8a"/>
-            <text x="248" y="92" font-size="10.5" text-anchor="middle" font-family="Inter" fill="#0f1b2d" font-weight="600">workpiece heat</text>
-            <text x="248" y="108" font-size="9" text-anchor="middle" font-family="Inter" fill="#3b4a5e">thermal memory</text>
-            <path d="M156 88 C 172 76, 184 76, 194 84" stroke="#3b4a5e" fill="none" stroke-width="1.5"/><path d="M194 108 C 184 116, 172 116, 156 104" stroke="#3b4a5e" fill="none" stroke-width="1.5"/>
-            <text x="175" y="34" font-size="10" text-anchor="middle" font-family="Inter" fill="#3b4a5e">physics-structured neural ODE</text>
-          </svg>
-        </div>
+        <div class="thumb dark"><canvas class="pool-canvas" aria-label="Animated molten pool growing as heat accumulates in the workpiece" role="img"></canvas></div>
         <div class="body"><span class="meta">2026 · University of Michigan · second author</span><h3>Process-agnostic molten pool dynamics with thermal memory</h3><p>A two-state model that learns pool behavior from process camera images across GTAW, GMAW and wire arc AM.</p><div class="tags"><span class="tag-s">Neural ODE</span><span class="tag-s">Vision</span><span class="tag-s">WAAM</span></div></div>
       </button>
 
@@ -335,16 +303,8 @@
       </button>
 
       <button class="card reveal" data-cat="industry" data-modal="p-energy">
-        <div class="thumb">
-          <svg viewBox="0 0 320 180" role="img" aria-label="Catalyst particles on a carbide support">
-            <rect width="320" height="180" fill="#fff"/>
-            <rect x="40" y="110" width="240" height="34" rx="6" fill="#e2f2f4" stroke="#157a8a"/><text x="160" y="131" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">transition-metal carbide support</text>
-            <g fill="#e0592a"><circle cx="80" cy="102" r="8"/><circle cx="120" cy="100" r="10"/><circle cx="165" cy="103" r="7"/><circle cx="205" cy="99" r="11"/><circle cx="245" cy="102" r="8"/></g>
-            <text x="160" y="60" font-size="11" text-anchor="middle" font-family="Inter" fill="#0f1b2d">Pt and bimetallic catalysts</text>
-            <text x="160" y="78" font-size="9.5" text-anchor="middle" font-family="Inter" fill="#3b4a5e">fuel cells · supercapacitors · hydrogen</text>
-          </svg>
-        </div>
-        <div class="body"><span class="meta">2011 to 2017 · University of Michigan</span><h3>Energy materials: catalysis and charge storage</h3><p>Carbide and nitride electrocatalysts and pseudocapacitors, the chemical engineering foundation of my work.</p><div class="tags"><span class="tag-s">Catalysis</span><span class="tag-s">Electrochemistry</span></div></div>
+        <div class="thumb"><img src="wc_catalysis.png" alt="Tungsten carbide phases, methanol oxidation onset and machine-learning reaction energies" loading="lazy"></div>
+        <div class="body"><span class="meta">Chemical engineering · University of Michigan</span><h3>Carbide catalysts, from experiment to ML mechanism</h3><p>Why one tungsten carbide phase oxidizes alcohols earliest, explained with machine-learning potentials.</p><div class="tags"><span class="tag-s">Catalysis</span><span class="tag-s">Electrochemistry</span></div></div>
       </button>
     </div>
   </div>
@@ -374,6 +334,7 @@
     <div class="stat"><b>281</b><span>power and velocity conditions in the process map</span></div>
     <div class="stat"><b>~18×</b><span>faster than high-fidelity simulation alone (about 4 vs 72 h per case)</span></div>
   </div>
+  <figure><video src="lpbf_sim.mp4" poster="lpbf_sim_poster.jpg" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>High-fidelity OpenFOAM simulation (top view): the laser melts the powder bed and the melt pool deepens into a keyhole, colored by temperature.</figcaption></figure>
   <figure><video src="dem_powder.mp4" poster="dem_powder_poster.jpg" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>Discrete element simulation of powder spreading and settling, which builds the powder bed for the melt pool and spatter simulations.</figcaption></figure>
   <figure><img src="spatter_framework.png" alt="Framework"><figcaption>Framework: OpenFOAM-trained classifier applied to FLOW-3D melt pools to build a spatter process map.</figcaption></figure>
   <figure><img src="spatter_processmap.png" alt="Spatter process map"><figcaption>Predicted spatter volume per track length across laser power and scan speed.</figcaption></figure>
@@ -416,6 +377,7 @@
 
 <template id="p-pool">
   <h3>Process-agnostic molten pool dynamics with thermal memory</h3>
+  <figure class="dark-fig"><canvas class="pool-canvas big" aria-label="Animated two-state molten pool model" role="img"></canvas><figcaption>Illustration of the idea: as layers build up, heat stored in the workpiece rises, and the same input makes a larger pool. The model tracks both states, pool geometry and stored heat.</figcaption></figure>
   <p>Molten pool behavior in arc welding and wire arc additive manufacturing depends on the current input and on the heat already stored in the workpiece. Energy balances reduce the pool dynamics to two states, pool geometry and stored heat, and a physics-structured neural ordinary differential equation keeps this structure while learning the unknown relations from data. A representation built on a frozen pretrained vision model supplies the pool state directly from process camera images, with one network design for GTAW, GMAW and WAAM.</p>
   <figure><video src="https://yuecaouky.github.io/yuecao.github.io/heat_simulation_3d.webm" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>Finite-volume simulation in which heat accumulates in the workpiece, the hidden state the model infers from the pool alone. Video courtesy of Yue (Troy) Cao.</figcaption></figure>
   <figure><video src="https://yuecaouky.github.io/yuecao.github.io/gas_tungsten_arc_welding.webm" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>Gas tungsten arc welding pool images, one of the three processes modeled. Video courtesy of Yue (Troy) Cao; see his <a href="https://yuecaouky.github.io/yuecao.github.io/" target="_blank" rel="noopener">project page</a>.</figcaption></figure>
@@ -436,8 +398,10 @@
 </template>
 
 <template id="p-energy">
-  <h3>Energy materials: catalysis and charge storage</h3>
-  <p>At the University of Michigan with Prof. Levi Thompson, I developed platinum and bimetallic catalysts on transition-metal carbide supports for methanol and ethanol oxidation, synthesis routes for tungsten carbide phases, a PEM reactor for electrochemical hydrogenation, and studies of charge storage in vanadium and molybdenum nitrides and carbides for supercapacitors. This chemical engineering foundation shapes my interest in AI for chemical process manufacturing and energy systems.</p>
+  <h3>Energy materials: carbide catalysts, from experiment to ML mechanism</h3>
+  <p>Phase-pure tungsten carbides (hexagonal W<sub>2</sub>C, rock-salt WC<sub>1−x</sub> and hexagonal WC), made by temperature-programmed reaction, behave very differently for alcohol oxidation in alkaline electrolyte. W<sub>2</sub>C starts methanol oxidation earliest, about 0.25 V before WC<sub>1−x</sub>, while WC is inactive. Reaction free energies from a universal machine-learning interatomic potential (UMA) explain why: dehydrogenation runs downhill on W<sub>2</sub>C, and oxygen-covered W<sub>2</sub>C removes adsorbed CO at about 0.6 V.</p>
+  <figure><img src="wc_catalysis.png" alt="Three tungsten carbide phases, measured onset potentials and computed free-energy diagram"><figcaption>Left: the three phases. Middle: measured onset of methanol oxidation (0.5 M KOH). Right: free-energy diagram at 0 V<sub>RHE</sub> from the machine-learning potential.</figcaption></figure>
+  <p>This builds on my earlier work with Prof. Levi Thompson at the University of Michigan on platinum and bimetallic catalysts on carbide supports, electrochemical hydrogenation, and charge storage in nitrides and carbides for supercapacitors.</p>
   <p class="note">Selected: <i>Chemical Engineering Journal</i> (2021); <i>Nano Energy</i> (2018, 2019); <i>Journal of Power Sources</i> (2015); <i>Journal of Catalysis</i> (2012).</p>
 </template>
 
@@ -513,6 +477,7 @@
       <h2>Teaching</h2>
       <p>I want students to leave my courses able to explain the physics behind a result, check whether a model or an AI tool is giving a sound answer, and make a decision with its uncertainty stated.</p>
       <div class="courses">
+        <div class="course"><span class="k">Teaching support · University of Michigan · Fall 2026</span><h3>ME 499/599: Data Science for Manufacturing Quality Control</h3><p>With Prof. Chenhui Shao: I help prepare homework, hold office hours, and mentor student teams on course projects built on real manufacturing data, from proposal to an industry-style final review.</p></div>
         <div class="course"><span class="k">Teaching assistant · Carnegie Mellon · Fall 2023</span><h3>Mechanical Systems Experimentation</h3><p>Weekly labs for about 30 students on vibration, system identification and feedback control (P, PI, PID) in MATLAB and Simulink.</p></div>
         <div class="course"><span class="k">Teaching assistant · Carnegie Mellon · Spring 2025</span><h3>Product Design (senior capstone)</h3><p>Mentored teams on design for manufacture and assembly, FMEA and life-cycle assessment, with ABET-aligned documentation.</p></div>
         <div class="course"><span class="k">Course in development · graduate · 14 weeks</span><h3>Generative AI for Manufacturing</h3><p>Transformers for process signals, diffusion models for defects, retrieval over standards, tool-using agents over validated process models, trace-audited evaluation, and deployment of local models on the plant floor.</p></div>
@@ -595,7 +560,7 @@
 <script src="main.js"></script>
 <script src="gradient.js"></script>
 <script src="laser.js"></script>
-<script src="world.js"></script>
+<script src="pool.js"></script>
 <script src="floor.js"></script>
 </body>
 </html>
