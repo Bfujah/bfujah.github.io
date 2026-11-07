@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olabode T. Ajenifujah | Verified AI Agents for Manufacturing</title>
+<meta name="description" content="Olabode T. Ajenifujah, postdoctoral research fellow at the University of Michigan. I build AI agents that manufacturing can trust and certify, across additive manufacturing, welding, stamping and beyond.">
+<meta property="og:title" content="Olabode T. Ajenifujah | Verified AI Agents for Manufacturing">
+<meta property="og:description" content="AI agents that manufacturing can trust and certify: validated models and code decide, the agent orchestrates and explains.">
+<meta property="og:image" content="agentam_overview.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23e0592a'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23157a8a' stroke-width='4' stroke-dasharray='6 5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Olabode T. Ajenifujah, home">
+      <svg class="liquid-logo" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2" result="b"/><feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9"/></filter>
+        <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0592a"/><stop offset="1" stop-color="#157a8a"/></linearGradient></defs>
+        <g filter="url(#goo)" fill="url(#lg)">
+          <circle cx="32" cy="32" r="17"/>
+          <circle cx="32" cy="12" r="7"><animateTransform attributeName="transform" type="rotate" from="0 32 32" to="360 32 32" dur="7s" repeatCount="indefinite"/></circle>
+          <circle cx="52" cy="32" r="5.5"><animateTransform attributeName="transform" type="rotate" from="0 32 32" to="-360 32 32" dur="9s" repeatCount="indefinite"/></circle>
+          <circle cx="32" cy="50" r="6"><animate attributeName="r" values="4;7.5;4" dur="4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="rotate" from="120 32 32" to="480 32 32" dur="11s" repeatCount="indefinite"/></circle>
+        </g>
+        <text x="32" y="37.5" text-anchor="middle" class="ll-text">OA</text>
+      </svg>
+      <span>Olabode T. Ajenifujah</span></a>
+    <ul id="navlist">
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#floor">Vision</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navlist">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="heroGradient" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="glass hero-card">
+      <div class="who">
+        <div class="avatar" aria-hidden="true"><img src="headshot.jpg" alt="" onerror="this.remove()">OA</div>
+        <div>
+          <span class="eyebrow" style="margin:0">Postdoctoral Research Fellow</span>
+          <div class="role" style="margin:0">Mechanical Engineering, University of Michigan</div>
+        </div>
+      </div>
+      <h1>Olabode T. Ajenifujah</h1>
+      <p class="thesis">I build AI agents that manufacturing can <em>trust and certify</em>: the agent plans and explains, while validated models and code decide.</p>
+      <p class="lead">My work spans additive manufacturing, welding and stamping, from multiphysics simulation and machine learning of laser powder bed fusion to tool-using and multi-agent language-model systems that make quality decisions on production data. The goal is one verified-agent platform for smart manufacturing.</p>
+      <div class="btns">
+        <a class="btn primary" href="Ajenifujah_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&user=a5dQu_MAAAAJ&view_op=list_works" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://www.linkedin.com/in/olabode-ajenifujah-77445451/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/bfujah" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:fujah@umich.edu">fujah@umich.edu</a>
+      </div>
+    </div>
+
+    <figure class="platform reveal" aria-label="Diagram of a verified-agent platform connecting manufacturing processes">
+      <svg viewBox="0 0 460 440" role="img">
+        <title>One verified-agent platform across manufacturing processes</title>
+        <circle class="dg-orbit" cx="230" cy="210" r="150"/>
+        <line class="dg-link done" x1="230" y1="210" x2="230" y2="60"/>
+        <line class="dg-link done" x1="230" y1="210" x2="360" y2="135"/>
+        <line class="dg-link done" x1="230" y1="210" x2="360" y2="285"/>
+        <line class="dg-link" x1="230" y1="210" x2="230" y2="360"/>
+        <line class="dg-link" x1="230" y1="210" x2="100" y2="285"/>
+        <line class="dg-link" x1="230" y1="210" x2="100" y2="135"/>
+        <circle class="pulse" cx="230" cy="210" r="88" fill="var(--accent)" opacity=".18"/>
+        <circle class="dg-core" cx="230" cy="210" r="72"/>
+        <text class="dg-core-text" x="230" y="200" text-anchor="middle" font-size="17">Verified</text>
+        <text class="dg-core-text" x="230" y="220" text-anchor="middle" font-size="17">agent</text>
+        <text x="230" y="240" text-anchor="middle" font-size="9.5" fill="var(--bg)" opacity=".75" font-family="Inter, sans-serif">models + code decide</text>
+
+        <g class="ring-done"><circle cx="230" cy="60" r="46" stroke-width="2"/></g>
+        <text class="dg-text" x="230" y="57" text-anchor="middle">Additive</text>
+        <text class="dg-sub" x="230" y="72" text-anchor="middle">LPBF</text>
+        <g class="ring-done"><circle cx="360" cy="135" r="46" stroke-width="2"/></g>
+        <text class="dg-text" x="360" y="132" text-anchor="middle">Welding</text>
+        <text class="dg-sub" x="360" y="147" text-anchor="middle">ultrasonic, arc</text>
+        <g class="ring-done"><circle cx="360" cy="285" r="46" stroke-width="2"/></g>
+        <text class="dg-text" x="360" y="282" text-anchor="middle">Stamping</text>
+        <text class="dg-sub" x="360" y="297" text-anchor="middle">press tonnage</text>
+        <g class="ring-next"><circle cx="230" cy="360" r="46" stroke-width="1.6"/></g>
+        <text class="dg-text" x="230" y="357" text-anchor="middle">Machining</text>
+        <text class="dg-sub" x="230" y="372" text-anchor="middle">CNC</text>
+        <g class="ring-next"><circle cx="100" cy="285" r="46" stroke-width="1.6"/></g>
+        <text class="dg-text" x="100" y="282" text-anchor="middle">Wafer fab</text>
+        <text class="dg-sub" x="100" y="297" text-anchor="middle">semiconductor</text>
+        <g class="ring-next"><circle cx="100" cy="135" r="46" stroke-width="1.6"/></g>
+        <text class="dg-text" x="100" y="132" text-anchor="middle">Chemical</text>
+        <text class="dg-sub" x="100" y="147" text-anchor="middle">process plants</text>
+
+        <g transform="translate(118,428)">
+          <circle cx="0" cy="-4" r="6" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+          <text class="dg-sub" x="12" y="0">studied</text>
+          <circle cx="92" cy="-4" r="6" fill="var(--surface)" stroke="var(--muted)" stroke-dasharray="3 3" stroke-width="1.6"/>
+          <text class="dg-sub" x="104" y="0">next on the platform</text>
+        </g>
+      </svg>
+    </figure>
+  </div>
+</header>
+
+<section id="world" class="world static" aria-label="From powder to verified decision">
+  <div class="world-sticky">
+    <canvas id="worldCanvas" aria-hidden="true"></canvas>
+    <div class="world-head"><span class="eyebrow">Scroll through the process</span><h2>From powder to a verified decision</h2></div>
+    <div class="world-panels">
+      <div class="world-panel glass on"><span class="eyebrow">01 · Powder</span><h3>A powder bed, particle by particle</h3><p>A discrete element simulation spreads and settles stainless steel powder over the build plate, giving the simulations a realistic, randomly packed bed.</p>
+        <video src="dem_powder.mp4" poster="dem_powder_poster.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="world-panel glass"><span class="eyebrow">02 · Laser</span><h3>Melt pool physics</h3><p>Calibrated multiphysics simulations resolve heat transfer, fluid flow, evaporation and recoil pressure as the laser scans each track.</p></div>
+      <div class="world-panel glass"><span class="eyebrow">03 · Spatter</span><h3>Why droplets eject</h3><p>Explainable machine learning, validated against experiments, learns when spatter forms, and turns it into process maps that are fast to query.</p></div>
+      <div class="world-panel glass"><span class="eyebrow">04 · Agent</span><h3>The agent explains, code decides</h3><p>Validated models become tools. Agents above the machine plan and explain, while every number and decision comes from a model or from code.</p></div>
+    </div>
+    <div class="world-progress" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<section id="approach" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Approach</span>
+    <h2>A clear division of labor between language and physics</h2>
+    <p class="lead">Language-model agents let an engineer ask for a prediction, a process map or a quality decision in plain language. They can also sound confident while passing wrong inputs or inventing numbers. In a process that must be certified, that is not acceptable. My agents are built so that every number and decision can be traced to a validated model or to code.</p>
+    <div class="steps">
+      <div class="step reveal"><span class="num">01</span><h3>The agent orchestrates and explains</h3><p>It reads the request, chooses tools and their inputs, and writes the answer for the engineer, with every value taken from the tool record.</p></div>
+      <div class="step reveal"><span class="num">02</span><h3>Validated models and code decide</h3><p>Physics-based surrogates, monitors and plant policies run in code. The agent states the rule; code applies it to every part, weld or layer.</p></div>
+      <div class="step reveal"><span class="num">03</span><h3>Every claim is graded in code</h3><p>Answers are scored by exact match against keys computed in code, tool calls are replayed to locate each failure, and studies are pre-registered.</p></div>
+    </div>
+
+    <h3 style="margin-top:44px">What my studies teach about AI in the physical world</h3>
+    <div class="lessons">
+      <div class="lesson reveal"><b>The weak link is the agent</b>Failures come from how the agent uses validated models, so the agent must be tested on its own.</div>
+      <div class="lesson reveal"><b>Decisions belong in code</b>Language belongs to the agent; computing and deciding belong to models and code.</div>
+      <div class="lesson reveal"><b>Local models can be enough</b>With the right interface, open-weight models on a plant's own hardware can match hosted ones.</div>
+      <div class="lesson reveal"><b>Correct is not always right</b>A policy applied perfectly can still be the wrong physical decision; check against outcomes.</div>
+      <div class="lesson reveal"><b>Split the items, not the expertise</b>Teams scale by dividing the work, and are only as reliable as their weakest member.</div>
+    </div>
+    <p class="muted" style="margin-top:18px;font-size:.9rem">These are the conditions for the human-centric, resilient AI that Industry 5.0 calls for: engineers stay in charge of decisions they can audit, and AI runs where the data are made.</p>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <span class="eyebrow">Research program</span>
+    <h2>Toward one verified-agent platform for smart manufacturing</h2>
+    <p class="lead">The same pattern has worked for welding quality decisions, LPBF process design and stamping diagnosis. The next step is to show that it is a platform rather than a set of projects, across discrete and continuous manufacturing.</p>
+    <div class="thrusts">
+      <div class="thrust reveal">
+        <span class="tag">THRUST 1</span>
+        <h3>Verified agents for process design</h3>
+        <p class="muted">Reach a defect-free process window in fewer builds.</p>
+        <ul>
+          <li>Agents propose; surrogates and Bayesian optimization run in code</li>
+          <li>Domain checks flag requests outside the training data</li>
+          <li>First study: agents that choose LPBF parameters, graded in code</li>
+        </ul>
+      </div>
+      <div class="thrust reveal">
+        <span class="tag">THRUST 2</span>
+        <h3>In situ sensing, diagnosis and control</h3>
+        <p class="muted">Replace part of post-build inspection with auditable decisions.</p>
+        <ul>
+          <li>Segment process signals by physical phase; verify fingerprints with engineers</li>
+          <li>Physics-informed generation of rare defects</li>
+          <li>From flagging to closed-loop correction by a verified controller</li>
+        </ul>
+      </div>
+      <div class="thrust reveal">
+        <span class="tag">THRUST 3</span>
+        <h3>Reliability science across processes</h3>
+        <p class="muted">Turn design rules into tested, general principles.</p>
+        <ul>
+          <li>Test the same rules on welding, stamping and LPBF together</li>
+          <li>Open, pre-registered benchmarks separating agent and model errors</li>
+          <li>Shadow-mode trials and studies of engineer trust</li>
+        </ul>
+      </div>
+    </div>
+    <div class="platform-row" aria-label="Processes on the platform">
+      <span class="chip done">Additive manufacturing</span><span class="chip done">Ultrasonic and arc welding</span><span class="chip done">Sheet-metal stamping</span>
+      <span class="chip next">CNC machining</span><span class="chip next">Semiconductor processing</span><span class="chip next">Chemical process manufacturing</span>
+    </div>
+  </div>
+</section>
+
+<section id="floor" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Vision · illustrative animation</span>
+    <h2>The agentic factory floor</h2>
+    <p class="lead">Where the platform is heading: a team of agents running a mixed manufacturing floor, with stamping, welding, additive manufacturing, machining, inspection and a robot in the loop. Every agent works through validated models, code makes every decision, and the engineer stays in charge.</p>
+    <div class="floor-modes" role="group" aria-label="Choose a scenario">
+      <button data-mode="production" aria-pressed="true">Optimize production</button>
+      <button data-mode="quality" aria-pressed="false">Quality control</button>
+      <button data-mode="diagnostics" aria-pressed="false">Diagnosis</button>
+      <button data-mode="cost" aria-pressed="false">Reduce cost</button>
+      <button data-mode="security" aria-pressed="false">Secure floor</button>
+      <button data-mode="robot" aria-pressed="false">Robot in the loop</button>
+      <button id="floorPlay" class="play" aria-pressed="false">Pause</button>
+    </div>
+    <div class="floor-wrap">
+      <div class="floor-canvas"><svg id="floorSvg" viewBox="0 0 1000 560" role="img" aria-label="Animated factory floor with agents, stations, conveyor, robot and AGV"><title>Agentic factory floor</title></svg></div>
+      <aside class="floor-side">
+        <p id="floorCaption" class="floor-cap"></p>
+        <h3>Decision log</h3>
+        <ol id="floorLog" class="floor-log" aria-live="polite"></ol>
+      </aside>
+    </div>
+    <p class="muted" style="font-size:.85rem;margin-top:12px">Illustrative concept, not a deployed system. The welding, stamping and AM pieces are studied in my projects; machining, the shared floor and the robot loop are the next steps of the research program.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <span class="eyebrow">Projects</span>
+    <h2>Selected projects</h2>
+    <p class="lead">Click a project for details and figures. Industry-sponsored work is described by its questions and methods; results appear here as they are published.</p>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="filter" data-f="all" aria-pressed="true">All</button>
+      <button class="filter" data-f="agents" aria-pressed="false">AI agents</button>
+      <button class="filter" data-f="am" aria-pressed="false">Additive manufacturing</button>
+      <button class="filter" data-f="monitor" aria-pressed="false">Monitoring and diagnosis</button>
+      <button class="filter" data-f="sim" aria-pressed="false">Simulation and physics ML</button>
+      <button class="filter" data-f="industry" aria-pressed="false">Industry and energy</button>
+    </div>
+
+    <div class="grid" id="projectGrid">
+      <button class="card reveal" data-cat="agents am" data-modal="p-agentam">
+        <div class="thumb"><img src="agentam_overview.png" alt="AgentAM overview: an engineer's request, the agent, the MCP tool server and the result" loading="lazy"></div>
+        <div class="body"><span class="meta">2025 to 2026 · Carnegie Mellon</span><h3>AgentAM: a verified agent for LPBF process optimization</h3><p>An agent that operates CFD-trained surrogates through the Model Context Protocol to find low-spatter, defect-free parameters.</p><div class="tags"><span class="tag-s">LLM agents</span><span class="tag-s">MCP</span><span class="tag-s">LPBF</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="am sim" data-modal="p-spatter">
+        <div class="thumb"><img src="spatter_framework.png" alt="Framework coupling OpenFOAM, machine learning and FLOW-3D to build a spatter process map" loading="lazy"></div>
+        <div class="body"><span class="meta">2021 to 2025 · Carnegie Mellon · ARL</span><h3>Spatter mechanism and process window in LPBF</h3><p>High-fidelity multiphysics simulation and explainable machine learning define where and why spatter forms.</p><div class="tags"><span class="tag-s">OpenFOAM</span><span class="tag-s">FLOW-3D</span><span class="tag-s">SHAP</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="agents monitor" data-modal="p-welding">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Agent harness diagram">
+            <rect x="0" y="0" width="320" height="180" fill="#fff"/>
+            <rect x="14" y="66" width="62" height="44" rx="8" fill="#f3f5f8" stroke="#3b4a5e"/><text x="45" y="92" font-size="11" text-anchor="middle" font-family="Inter" fill="#0f1b2d">Engineer</text>
+            <rect x="104" y="58" width="74" height="60" rx="10" fill="#0f1b2d"/><text x="141" y="86" font-size="12" text-anchor="middle" font-family="Inter" fill="#fff" font-weight="600">Agent</text><text x="141" y="101" font-size="8.5" text-anchor="middle" font-family="Inter" fill="#cfd8e3">plans, explains</text>
+            <rect x="206" y="22" width="100" height="40" rx="8" fill="#e2f2f4" stroke="#157a8a"/><text x="256" y="46" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">Validated models</text>
+            <rect x="206" y="72" width="100" height="40" rx="8" fill="#e2f2f4" stroke="#157a8a"/><text x="256" y="96" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">Code decides</text>
+            <rect x="206" y="122" width="100" height="40" rx="8" fill="#fdebe3" stroke="#e0592a"/><text x="256" y="146" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">Key in code, replay</text>
+            <path d="M76 88h26M178 74l26-28M178 88h26M178 102l26 40" stroke="#6b7889" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body"><span class="meta">2026 · University of Michigan · General Motors</span><h3>Verified agents for production welding decisions</h3><p>A process-agnostic harness and a series of pre-registered studies on how agents should operate validated quality models.</p><div class="tags"><span class="tag-s">Ultrasonic welding</span><span class="tag-s">Evaluation</span><span class="tag-s">Local LLMs</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="agents" data-modal="p-teams">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Coordinator agent with batch agents">
+            <rect width="320" height="180" fill="#fff"/>
+            <rect x="120" y="16" width="80" height="34" rx="8" fill="#0f1b2d"/><text x="160" y="38" font-size="11" text-anchor="middle" font-family="Inter" fill="#fff" font-weight="600">Coordinator</text>
+            <g font-family="Inter" font-size="9" text-anchor="middle" fill="#0f1b2d">
+              <rect x="18" y="86" width="56" height="30" rx="7" fill="#fdebe3" stroke="#e0592a"/><text x="46" y="105">Batch 1</text>
+              <rect x="94" y="86" width="56" height="30" rx="7" fill="#fdebe3" stroke="#e0592a"/><text x="122" y="105">Batch 2</text>
+              <rect x="170" y="86" width="56" height="30" rx="7" fill="#fdebe3" stroke="#e0592a"/><text x="198" y="105">Batch 3</text>
+              <rect x="246" y="86" width="56" height="30" rx="7" fill="#fdebe3" stroke="#e0592a"/><text x="274" y="105">Batch K</text>
+              <rect x="40" y="140" width="240" height="26" rx="7" fill="#e2f2f4" stroke="#157a8a"/><text x="160" y="157">shared board · code-computed decisions per weld</text>
+            </g>
+            <path d="M160 50v18M46 68h228M46 68v18M122 68v18M198 68v18M274 68v18" stroke="#6b7889" stroke-width="1.4" fill="none"/>
+          </svg>
+        </div>
+        <div class="body"><span class="meta">2026 · University of Michigan · General Motors</span><h3>One agent or a team? Multi-agent design for a multi-line plant</h3><p>How work should be divided among agents, and how large a team should be, on a plant built from real welds.</p><div class="tags"><span class="tag-s">Multi-agent</span><span class="tag-s">Pre-registered</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="monitor" data-modal="p-stamping">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Stamping monitoring pipeline">
+            <rect width="320" height="180" fill="#fff"/>
+            <path d="M18 120 C 50 120, 60 118, 80 110 S 110 60, 130 40 S 150 70, 160 95 S 190 125, 210 128 L 300 128" stroke="#e0592a" stroke-width="2.4" fill="none"/>
+            <g stroke="#157a8a" stroke-dasharray="3 4"><line x1="80" y1="22" x2="80" y2="140"/><line x1="130" y1="22" x2="130" y2="140"/><line x1="165" y1="22" x2="165" y2="140"/></g>
+            <g font-family="Inter" font-size="9" fill="#3b4a5e" text-anchor="middle"><text x="49" y="18">pre-load</text><text x="105" y="18">shoulder</text><text x="148" y="18">peak</text><text x="230" y="18">recoil</text></g>
+            <g font-family="Inter" font-size="9.5" fill="#0f1b2d" text-anchor="middle">
+              <text x="40" y="168">detect</text><text x="100" y="168">localize</text><text x="160" y="168">verify</text><text x="222" y="168">synthesize</text><text x="288" y="168">classify</text>
+            </g>
+            <text x="300" y="120" font-size="9" text-anchor="end" font-family="Inter" fill="#6b7889">tonnage vs crank angle</text>
+          </svg>
+        </div>
+        <div class="body"><span class="meta">2026 · University of Michigan · General Motors</span><h3>Explainable monitoring for sheet-metal stamping</h3><p>From the tonnage curve presses already record to verified root causes, with physics-informed synthetic faults.</p><div class="tags"><span class="tag-s">Explainable AI</span><span class="tag-s">Synthetic data</span><span class="tag-s">PCA</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="sim monitor am" data-modal="p-pool">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Two-state molten pool model">
+            <rect width="320" height="180" fill="#fff"/>
+            <ellipse cx="96" cy="96" rx="58" ry="26" fill="#fdebe3" stroke="#e0592a" stroke-width="2"/><ellipse cx="96" cy="96" rx="28" ry="12" fill="#e0592a" opacity=".75"/>
+            <text x="96" y="146" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">pool geometry (image state)</text>
+            <rect x="196" y="66" width="104" height="60" rx="10" fill="#e2f2f4" stroke="#157a8a"/>
+            <text x="248" y="92" font-size="10.5" text-anchor="middle" font-family="Inter" fill="#0f1b2d" font-weight="600">workpiece heat</text>
+            <text x="248" y="108" font-size="9" text-anchor="middle" font-family="Inter" fill="#3b4a5e">thermal memory</text>
+            <path d="M156 88 C 172 76, 184 76, 194 84" stroke="#3b4a5e" fill="none" stroke-width="1.5"/><path d="M194 108 C 184 116, 172 116, 156 104" stroke="#3b4a5e" fill="none" stroke-width="1.5"/>
+            <text x="175" y="34" font-size="10" text-anchor="middle" font-family="Inter" fill="#3b4a5e">physics-structured neural ODE</text>
+          </svg>
+        </div>
+        <div class="body"><span class="meta">2026 · University of Michigan · second author</span><h3>Process-agnostic molten pool dynamics with thermal memory</h3><p>A two-state model that learns pool behavior from process camera images across GTAW, GMAW and wire arc AM.</p><div class="tags"><span class="tag-s">Neural ODE</span><span class="tag-s">Vision</span><span class="tag-s">WAAM</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="am agents sim" data-modal="p-collab">
+        <div class="thumb"><img src="spatter_openfoam.png" alt="OpenFOAM simulation of a spatter event in LPBF" loading="lazy"></div>
+        <div class="body"><span class="meta">2023 to 2025 · Carnegie Mellon · collaborative</span><h3>Generative models and LLMs for additive manufacturing</h3><p>Diffusion models for high-fidelity melt pools at low cost, AMGPT for the AM literature, and constitutive models of melt pools and spatter.</p><div class="tags"><span class="tag-s">Diffusion</span><span class="tag-s">RAG</span><span class="tag-s">Symbolic regression</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="industry sim" data-modal="p-amat">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Deposition chamber schematic">
+            <rect width="320" height="180" fill="#fff"/>
+            <rect x="70" y="30" width="180" height="120" rx="14" fill="#f3f5f8" stroke="#3b4a5e" stroke-width="1.5"/>
+            <rect x="110" y="112" width="100" height="10" rx="3" fill="#157a8a"/><text x="160" y="140" font-size="9.5" text-anchor="middle" font-family="Inter" fill="#3b4a5e">wafer</text>
+            <g stroke="#e0592a" stroke-width="1.6" fill="none"><path d="M120 48 C 130 70, 120 90, 132 108"/><path d="M160 48 C 170 70, 150 90, 160 108"/><path d="M200 48 C 190 70, 200 90, 188 108"/></g>
+            <text x="160" y="24" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">flow, thermal and reaction chemistry</text>
+          </svg>
+        </div>
+        <div class="body"><span class="meta">2017 to 2021 · Applied Materials</span><h3>Semiconductor process equipment modeling</h3><p>CFD and FEA for epitaxy, deposition and etch chambers, chamber energy reporting, and CMP process improvement.</p><div class="tags"><span class="tag-s">CFD</span><span class="tag-s">FEA</span><span class="tag-s">Semiconductor</span></div></div>
+      </button>
+
+      <button class="card reveal" data-cat="industry" data-modal="p-energy">
+        <div class="thumb">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Catalyst particles on a carbide support">
+            <rect width="320" height="180" fill="#fff"/>
+            <rect x="40" y="110" width="240" height="34" rx="6" fill="#e2f2f4" stroke="#157a8a"/><text x="160" y="131" font-size="10" text-anchor="middle" font-family="Inter" fill="#0f1b2d">transition-metal carbide support</text>
+            <g fill="#e0592a"><circle cx="80" cy="102" r="8"/><circle cx="120" cy="100" r="10"/><circle cx="165" cy="103" r="7"/><circle cx="205" cy="99" r="11"/><circle cx="245" cy="102" r="8"/></g>
+            <text x="160" y="60" font-size="11" text-anchor="middle" font-family="Inter" fill="#0f1b2d">Pt and bimetallic catalysts</text>
+            <text x="160" y="78" font-size="9.5" text-anchor="middle" font-family="Inter" fill="#3b4a5e">fuel cells · supercapacitors · hydrogen</text>
+          </svg>
+        </div>
+        <div class="body"><span class="meta">2011 to 2017 · University of Michigan</span><h3>Energy materials: catalysis and charge storage</h3><p>Carbide and nitride electrocatalysts and pseudocapacitors, the chemical engineering foundation of my work.</p><div class="tags"><span class="tag-s">Catalysis</span><span class="tag-s">Electrochemistry</span></div></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Project details (loaded into the dialog) -->
+<template id="p-agentam">
+  <h3>AgentAM: a verified agent for LPBF process optimization</h3>
+  <p>AgentAM gives a language-model agent plain-language access to CFD-trained surrogates of spatter and melt pool geometry for SS316L through the Model Context Protocol. The agent reads the request, chooses a tool and its inputs, and reports only values that the tools return. Geometric criteria assign each power and velocity point a defect regime (keyhole, lack of fusion, balling or stable), and a margin-aware optimizer moves minimum-spatter optima away from defect boundaries.</p>
+  <div class="stats">
+    <div class="stat"><b>93.4%</b><span>defect-regime match with simulation (cross-validated)</span></div>
+    <div class="stat"><b>0.94 → 1.00</b><span>estimated probability of staying defect-free under 2% drift</span></div>
+    <div class="stat"><b>98.5%</b><span>intended inputs passed, 145-prompt benchmark (725 runs)</span></div>
+    <div class="stat"><b>80%</b><span>answers with fabricated results when the same model had no tools</span></div>
+  </div>
+  <figure><img src="agentam_overview.png" alt="AgentAM overview"><figcaption>From a plain-language request to a verified result: the agent, the local MCP tool server and the evaluation layer.</figcaption></figure>
+  <figure><img src="agentam_architecture.png" alt="AgentAM architecture"><figcaption>Architecture: all surrogate inference runs locally; only parameter values and model outputs reach the language model.</figcaption></figure>
+  <figure><img src="agentam_robust.png" alt="Margin-aware optimization"><figcaption>Margin-aware optimization trades a little spatter for distance from the lack-of-fusion boundary.</figcaption></figure>
+  <p class="note">O. T. Ajenifujah and A. Barati Farimani. AgentAM: an AI agent for spatter- and defect-aware process optimization in laser powder bed fusion. Under revision. <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv:2611.05171</a></p>
+</template>
+
+<template id="p-spatter">
+  <h3>Spatter mechanism and process window in LPBF</h3>
+  <p>Spatter is a primary source of defects in laser powder bed fusion, but simulations that resolve it are too expensive to map a wide process space. I coupled high-fidelity OpenFOAM simulations, which resolve recoil-driven spatter ejection, with machine learning and a faster commercial solver (FLOW-3D). A classifier trained on high-fidelity melt pool and spatter fields transfers to FLOW-3D melt pools, so spatter can be predicted across many conditions at low cost. SHAP and feature-importance analyses identify pressure, vertical velocity and the balance between recoil pressure and surface tension as the main drivers of ejection.</p>
+  <div class="stats">
+    <div class="stat"><b>94%</b><span>classifier accuracy on held-out data</span></div>
+    <div class="stat"><b>281</b><span>power and velocity conditions in the process map</span></div>
+    <div class="stat"><b>~18×</b><span>faster than high-fidelity simulation alone (about 4 vs 72 h per case)</span></div>
+  </div>
+  <figure><video src="dem_powder.mp4" poster="dem_powder_poster.jpg" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>Discrete element simulation of powder spreading and settling, which builds the powder bed for the melt pool and spatter simulations.</figcaption></figure>
+  <figure><img src="spatter_framework.png" alt="Framework"><figcaption>Framework: OpenFOAM-trained classifier applied to FLOW-3D melt pools to build a spatter process map.</figcaption></figure>
+  <figure><img src="spatter_processmap.png" alt="Spatter process map"><figcaption>Predicted spatter volume per track length across laser power and scan speed.</figcaption></figure>
+  <p class="note">The high-fidelity model is validated against measured melt pool dimensions, temperature, and spatter size and velocity. Sponsored by the Army Research Laboratory. O. T. Ajenifujah, F. Ogoke, F. Wirth, J. Beuth and A. Barati Farimani. <i>Additive Manufacturing</i>, under review. <a href="https://arxiv.org/abs/2405.07823" target="_blank" rel="noopener">arXiv:2405.07823</a></p>
+</template>
+
+<template id="p-welding">
+  <h3>Verified agents for production welding decisions</h3>
+  <p>On the General Motors Cognitive Manufacturing project, I lead the University of Michigan work on language-model agents that operate validated quality and maintenance models for ultrasonic metal welding, the joining process used in battery and electrical assembly.</p>
+  <p>I built a process-agnostic evaluation harness that wraps validated diagnostic models as tools, grades every answer by exact match against a key computed in code (no language-model judge), and replays every tool call to locate each failure. With it I ran a connected series of studies, several pre-registered, each answering a question a plant must settle before it lets an agent touch a quality decision:</p>
+  <ul>
+    <li><b>Where do agents fail?</b> Separating the agent's errors from the models' errors.</li>
+    <li><b>Can a plant run agents on its own hardware?</b> Hosted frontier models compared with local open-weight models from 4 to 122 billion parameters.</li>
+    <li><b>How should an agent be built?</b> Designs in which the agent states the rule and code computes it.</li>
+    <li><b>Is a correct answer the right decision?</b> Cost-aware ship, hold or inspect decisions from calibrated strength models.</li>
+  </ul>
+  <p class="note">Results are being prepared for publication with General Motors and will be posted here as they appear.</p>
+</template>
+
+<template id="p-teams">
+  <h3>One agent or a team? Multi-agent design for a multi-line plant</h3>
+  <p>When a plant has many lines and thousands of welds, should one agent answer, or a team? I compared single agents with teams split by expert and teams split by the items themselves, with a shared board and code-computed decisions per weld, on a four-line plant built from real welds. A pre-registered follow-up varies the number of agents to ask how large a team should be, and why a team can be no more reliable than its weakest member.</p>
+  <p>The resulting design rules (split the items rather than the expertise, let code decide each item, and size teams to their weakest member) are now being tested on open data from laser powder bed fusion and CNC machining.</p>
+  <p class="note">Manuscript in preparation; results will be posted when published.</p>
+</template>
+
+<template id="p-stamping">
+  <h3>Explainable monitoring for sheet-metal stamping</h3>
+  <p>With Yue Cao, I lead explainable AI for stamping in a second General Motors project. The signal is the four-corner tonnage curve that presses already record on every stroke, an underused sensor at no extra cost. We built a connected pipeline in which each study hands its output to the next:</p>
+  <ul>
+    <li><b>Detect:</b> unsupervised methods that track a normal which drifts from run to run.</li>
+    <li><b>Localize:</b> regional PCA that splits each stroke into physical phases (pre-load, binder shoulder, peak, recoil) and shows which phase drives an anomaly.</li>
+    <li><b>Verify:</b> recurring fingerprints reviewed with plant engineers and mapped to verified root causes.</li>
+    <li><b>Synthesize:</b> physics-informed and language-guided generators for rare faults, where one fault changes one physical term.</li>
+    <li><b>Classify:</b> naming the fault family, as a step toward decision support and process optimization.</li>
+  </ul>
+  <p>The same structure (a signal recorded on every part, a drifting normal, few labeled faults, and engineers who need the cause rather than a flag) recurs in welding and additive manufacturing, which is why these methods transfer to layer-wise AM monitoring.</p>
+  <p class="note">Results will be posted when published.</p>
+</template>
+
+<template id="p-pool">
+  <h3>Process-agnostic molten pool dynamics with thermal memory</h3>
+  <p>Molten pool behavior in arc welding and wire arc additive manufacturing depends on the current input and on the heat already stored in the workpiece. Energy balances reduce the pool dynamics to two states, pool geometry and stored heat, and a physics-structured neural ordinary differential equation keeps this structure while learning the unknown relations from data. A representation built on a frozen pretrained vision model supplies the pool state directly from process camera images, with one network design for GTAW, GMAW and WAAM.</p>
+  <figure><video src="https://yuecaouky.github.io/yuecao.github.io/heat_simulation_3d.webm" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>Finite-volume simulation in which heat accumulates in the workpiece, the hidden state the model infers from the pool alone. Video courtesy of Yue (Troy) Cao.</figcaption></figure>
+  <figure><video src="https://yuecaouky.github.io/yuecao.github.io/gas_tungsten_arc_welding.webm" autoplay muted loop playsinline preload="none" style="width:100%;border-radius:8px"></video><figcaption>Gas tungsten arc welding pool images, one of the three processes modeled. Video courtesy of Yue (Troy) Cao; see his <a href="https://yuecaouky.github.io/yuecao.github.io/" target="_blank" rel="noopener">project page</a>.</figcaption></figure>
+  <p class="note">Y. Cao, O. Ajenifujah, Y. Yang, Y. M. Zhang, J. Abell and C. Shao. Process-agnostic modeling of arc-based molten pools: physics-structured latent dynamics with workpiece thermal memory. In preparation.</p>
+</template>
+
+<template id="p-collab">
+  <h3>Generative models and LLMs for additive manufacturing</h3>
+  <p>With colleagues in the Barati Farimani lab, I helped develop generative diffusion models that reconstruct high-fidelity melt pool fields from inexpensive low-fidelity simulations, AMGPT, a retrieval-augmented language model for evidence-grounded querying of the metal AM literature, and AMUI, a data-driven user interface for process optimization. My own constitutive models use machine learning and symbolic regression to express melt pool geometry and spatter generation as interpretable functions of process conditions, from calibrated simulations over about 280 power and velocity cases.</p>
+  <figure><img src="spatter_openfoam.png" alt="Spatter event in an OpenFOAM simulation"><figcaption>OpenFOAM simulation of a spatter event during laser traversal of the powder bed.</figcaption></figure>
+  <p class="note">Ogoke et al., <i>Materials &amp; Design</i> (2024); Chandrasekhar et al., <i>Additive Manufacturing Letters</i> (in press); Pak et al., SFF 2024.</p>
+</template>
+
+<template id="p-amat">
+  <h3>Semiconductor process equipment modeling</h3>
+  <p>Before my PhD, I spent four years at Applied Materials. As a computer-aided engineer, I built CFD and FEA models (CFD-ACE+, ANSYS, StarCCM+) for epitaxy, atomic layer, metal deposition and oxide-etch chambers, covering flow, heat transfer and reaction chemistry; modeled film chemistry for GaN, AlN and oxide deposition; ran ray-tracing simulations of epitaxy lamp heads; and built a SEMI S23 tool that reports energy use and equivalent CO<sub>2</sub> for deposition chambers. As a process engineer, I improved chemical mechanical planarization through post-polish cleaning chemistries and characterized pad materials.</p>
+  <p>This is why semiconductor processing is a natural next process for the verified-agent platform.</p>
+</template>
+
+<template id="p-energy">
+  <h3>Energy materials: catalysis and charge storage</h3>
+  <p>At the University of Michigan with Prof. Levi Thompson, I developed platinum and bimetallic catalysts on transition-metal carbide supports for methanol and ethanol oxidation, synthesis routes for tungsten carbide phases, a PEM reactor for electrochemical hydrogenation, and studies of charge storage in vanadium and molybdenum nitrides and carbides for supercapacitors. This chemical engineering foundation shapes my interest in AI for chemical process manufacturing and energy systems.</p>
+  <p class="note">Selected: <i>Chemical Engineering Journal</i> (2021); <i>Nano Energy</i> (2018, 2019); <i>Journal of Power Sources</i> (2015); <i>Journal of Catalysis</i> (2012).</p>
+</template>
+
+<section id="publications" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Publications</span>
+    <h2>Publications and presentations</h2>
+    <p class="muted">Full list on <a href="https://scholar.google.com/citations?hl=en&user=a5dQu_MAAAAJ&view_op=list_works" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    <div class="pub-tabs" role="group" aria-label="Filter publications">
+      <button class="filter" data-p="all" aria-pressed="true">All</button>
+      <button class="filter" data-p="ai" aria-pressed="false">AI agents and LLMs</button>
+      <button class="filter" data-p="am" aria-pressed="false">Manufacturing</button>
+      <button class="filter" data-p="energy" aria-pressed="false">Energy and catalysis</button>
+    </div>
+
+    <div class="pubgroup" data-group>
+      <h3>Preprints and under review</h3>
+      <ol class="pubs">
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, &amp; Barati Farimani, A. <span class="t">AgentAM: an AI agent for spatter- and defect-aware process optimization in laser powder bed fusion.</span> Under revision. <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv:2611.05171</a><span class="badge a">first author</span></li>
+        <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Wirth, F., Beuth, J., &amp; Barati Farimani, A. <span class="t">Integrating multi-physics simulations and machine learning to define the spatter mechanism and process window in laser powder bed fusion.</span> <span class="v">Additive Manufacturing</span>, under review. <a href="https://arxiv.org/abs/2405.07823" target="_blank" rel="noopener">arXiv:2405.07823</a><span class="badge a">first author</span></li>
+      </ol>
+    </div>
+
+    <div class="pubgroup" data-group>
+      <h3>Journal articles</h3>
+      <ol class="pubs">
+        <li data-t="ai am">Chandrasekhar, A., Chan, J., Ogoke, F., <span class="me">Ajenifujah, O.</span>, &amp; Barati Farimani, A. <span class="t">AMGPT: a large language model for contextual querying in additive manufacturing.</span> <span class="v">Additive Manufacturing Letters</span>, in press.</li>
+        <li data-t="am">Ogoke, F., Liu, Q., <span class="me">Ajenifujah, O.</span>, Myers, A. J., Quirarte, G., Beuth, J., Malen, J., &amp; Barati Farimani, A. (2024). <span class="t">Inexpensive high fidelity melt pool models in additive manufacturing using generative deep diffusion.</span> <span class="v">Materials &amp; Design</span>, 113181.</li>
+        <li data-t="energy">Khan, M. M., Bashir, S., Khan, M. W., &amp; <span class="me">Ajenifujah, O. T.</span> (2025). <span class="t">Reducing emissions and fuel consumption in supersonic aviation with ammonia hybrid engines.</span> <span class="v">International Journal of Hydrogen Energy</span>, 162, 150540.</li>
+        <li data-t="energy"><span class="me">Ajenifujah, O. T.</span>, Nouralishahi, A., Carl, S., Eady, S., Zhao, J., &amp; Thompson, L. T. (2021). <span class="t">Platinum supported on early transition metal carbides: efficient electrocatalysts for methanol electro-oxidation reaction in alkaline electrolyte.</span> <span class="v">Chemical Engineering Journal</span>, 406, 126670.<span class="badge a">first author</span></li>
+        <li data-t="energy">Djire, A., Pande, P., Deb, A., Siegel, J., <span class="me">Ajenifujah, O. T.</span>, He, L., Sleightholme, A. E., Rasmussen, P., &amp; Thompson, L. T. (2019). <span class="t">Unveiling the pseudocapacitive charge storage mechanisms of nanostructured vanadium nitrides using in-situ analyses.</span> <span class="v">Nano Energy</span>, 60, 72–82.</li>
+        <li data-t="energy">Djire, A., <span class="me">Ajenifujah, O. T.</span>, &amp; Thompson, L. T. (2018). <span class="t">Extent of pseudocapacitance in high-surface area vanadium nitrides.</span> <span class="v">Batteries &amp; Supercaps</span>.</li>
+        <li data-t="energy">Djire, A., Siegel, J. B., <span class="me">Ajenifujah, O.</span>, He, L., &amp; Thompson, L. T. (2018). <span class="t">Pseudocapacitive storage via micropores in high-surface area molybdenum nitrides.</span> <span class="v">Nano Energy</span>, 51, 122–127.</li>
+        <li data-t="energy">Bazyari, A., Mortazavi, Y., Khodadadi, A. A., Thompson, L. T., Tafreshi, R., Zaker, A., &amp; <span class="me">Ajenifujah, O. T.</span> (2016). <span class="t">Effects of alumina phases as nickel supports on deep reactive adsorption of (4,6-dimethyl)dibenzothiophene: comparison between γ, δ, and θ-alumina.</span> <span class="v">Applied Catalysis B: Environmental</span>, 180, 312–323.</li>
+        <li data-t="energy">Djire, A., <span class="me">Ajenifujah, O. T.</span>, Sleightholme, A. E., Rasmussen, P., &amp; Thompson, L. T. (2015). <span class="t">Effects of surface oxygen on charge storage in high surface area early transition-metal carbides and nitrides.</span> <span class="v">Journal of Power Sources</span>, 275, 159–166.</li>
+        <li data-t="energy">Schaidle, J. A., Schweitzer, N. M., <span class="me">Ajenifujah, O. T.</span>, &amp; Thompson, L. T. (2012). <span class="t">On the preparation of molybdenum carbide-supported metal catalysts.</span> <span class="v">Journal of Catalysis</span>, 289, 210–217.</li>
+      </ol>
+    </div>
+
+    <div class="pubgroup" data-group>
+      <h3>Manuscripts in preparation</h3>
+      <ol class="pubs">
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, et al. <span class="t">Orchestration reliability and failure modes of tool-using large language model agents for manufacturing quality and maintenance decision support.</span></li>
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, et al. <span class="t">Hosted versus local open-weight LLM agents for manufacturing decisions: correctness, grounding, interface effects, and cost.</span></li>
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, et al. <span class="t">Designing grounded LLM agents for manufacturing decisions: evidence from ultrasonic metal welding.</span></li>
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, et al. <span class="t">From correct to right: language-model agents making compound quality decisions over validated ultrasonic welding models.</span></li>
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, et al. <span class="t">The role of work division, shared memory and verification in tool-using large language model agents for multi-line manufacturing quality decisions.</span></li>
+        <li data-t="am">Cao, Y., <span class="me">Ajenifujah, O.</span>, Yang, Y., Zhang, Y. M., Abell, J., &amp; Shao, C. <span class="t">Process-agnostic modeling of arc-based molten pools: physics-structured latent dynamics with workpiece thermal memory.</span></li>
+        <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Wirth, F., Beuth, J., &amp; Barati Farimani, A. <span class="t">Derivation of constitutive model for melt pool features in additive manufacturing via machine learning.</span></li>
+        <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Wirth, F., Rollett, A., Beuth, J., &amp; Barati Farimani, A. <span class="t">Discovery of spatter constitutive models in additive manufacturing using machine learning.</span></li>
+      </ol>
+    </div>
+
+    <div class="pubgroup" data-group>
+      <h3>Selected presentations</h3>
+      <ol class="pubs">
+        <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Beuth, J., &amp; Barati Farimani, A. <span class="t">Application of multi-physics simulations and machine learning to predict spatter in laser powder bed fusion.</span> TMS 2025, Las Vegas, NV, March 2025.</li>
+        <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Wirth, F., Beuth, J., &amp; Barati Farimani, A. <span class="t">Combining multi-physics simulations with machine learning to elucidate spatter mechanisms and establish process map in laser powder bed fusion.</span> MS&amp;T 2024, Pittsburgh, PA.</li>
+        <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Wirth, F., Beuth, J., &amp; Barati Farimani, A. <span class="t">Synergizing machine learning and multiphysics simulation for spatter process map generation in LPBF processes.</span> Solid Freeform Fabrication Symposium, Austin, TX, August 2024.</li>
+        <li data-t="ai am">Pak, P., Ogoke, F., Chandrasekhar, A., Guntuboina, C., <span class="me">Ajenifujah, O.</span>, Rollett, A., Beuth, J., &amp; Barati Farimani, A. <span class="t">AMUI: a data-driven additive manufacturing user interface for process optimization.</span> SFF 2024, Austin, TX.</li>
+        <li data-t="am">Ogoke, F., et al., <span class="me">Ajenifujah, O.</span>, et al. <span class="t">Applying generative deep learning models for cost-effective monitoring and simulation of LPBF processes.</span> SFF 2024, Austin, TX.</li>
+        <li data-t="energy"><span class="me">Ajenifujah, O. T.</span>, Eady, S., Nouralishahi, A., &amp; Thompson, L. T. <span class="t">Platinum supported on early transition metal carbides: efficient electrocatalysts for methanol electro-oxidation in alkaline electrolyte.</span> NOBCChE National Conference, St. Louis, MO, 2019. Oral.</li>
+        <li data-t="energy">Djire, A., <span class="me">Ajenifujah, O. T.</span>, et al. <span class="t">Charge storage mechanisms in carbides and nitrides.</span> Electrochemical Society Meeting, Chicago, IL, 2015, and talks at AIChE, ECS and the Power Sources Conference, 2013 to 2014.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="wrap two">
+    <div>
+      <span class="eyebrow">Teaching</span>
+      <h2>Teaching</h2>
+      <p>I want students to leave my courses able to explain the physics behind a result, check whether a model or an AI tool is giving a sound answer, and make a decision with its uncertainty stated.</p>
+      <div class="courses">
+        <div class="course"><span class="k">Teaching assistant · Carnegie Mellon · Fall 2023</span><h3>Mechanical Systems Experimentation</h3><p>Weekly labs for about 30 students on vibration, system identification and feedback control (P, PI, PID) in MATLAB and Simulink.</p></div>
+        <div class="course"><span class="k">Teaching assistant · Carnegie Mellon · Spring 2025</span><h3>Product Design (senior capstone)</h3><p>Mentored teams on design for manufacture and assembly, FMEA and life-cycle assessment, with ABET-aligned documentation.</p></div>
+        <div class="course"><span class="k">Course in development · graduate · 14 weeks</span><h3>Generative AI for Manufacturing</h3><p>Transformers for process signals, diffusion models for defects, retrieval over standards, tool-using agents over validated process models, trace-audited evaluation, and deployment of local models on the plant floor.</p></div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">Mentoring and service</span>
+      <h2>Mentoring</h2>
+      <p>I mentor three first-year undergraduate researchers through the University of Michigan's Undergraduate Research Opportunity Program (UROP) on AI agents for manufacturing. Each student owns a real piece of the research, writes a short plan before each study, and meets with me weekly.</p>
+      <div class="courses">
+        <div class="course"><span class="k">Founder and President · since 2019</span><h3>The Fujah Foundation</h3><p>A nonprofit that expands access to clean water and educational resources in underserved communities, including school supplies and basic STEM enrichment.</p></div>
+        <div class="course"><span class="k">Applied Materials · 2019 to 2020</span><h3>Vice President, Young Professional Network</h3><p>Led program planning and professional development; new-graduate recruiter at the University of Michigan.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="alt">
+  <div class="wrap two">
+    <div>
+      <span class="eyebrow">Experience and education</span>
+      <h2>Experience</h2>
+      <div class="tl">
+        <div class="tl-item"><span class="when">2026 to present</span><h3>Postdoctoral Research Fellow, University of Michigan</h3><p>Mechanical Engineering, with Prof. Chenhui Shao and Prof. Jeffrey Abell. AI agents and explainable monitoring for manufacturing with General Motors.</p></div>
+        <div class="tl-item"><span class="when">2021 to 2025</span><h3>Ph.D., Mechanical Engineering, Carnegie Mellon University</h3><p>Advisor: Prof. Amir Barati Farimani. Thesis: Machine Learning Models for Spatter Reduction in Additive Manufacturing. GEM Fellow; research sponsored by the Army Research Laboratory.</p></div>
+        <div class="tl-item"><span class="when">2017 to 2021</span><h3>Applied Materials</h3><p>Computer Aided Engineer and Process Engineer: CFD and FEA for deposition and etch chambers, CMP process improvement.</p></div>
+        <div class="tl-item"><span class="when">2009 to 2016</span><h3>B.S.E. and M.S.E., Chemical Engineering, University of Michigan</h3><p>Research in catalysis and electrochemical energy storage with Prof. Levi Thompson.</p></div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">News</span>
+      <h2>Recent news</h2>
+      <ul class="news">
+        <li><span class="d">Nov 2026</span><span>AgentAM preprint posted on <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv</a>.</span></li>
+        <li><span class="d">2026</span><span>Began mentoring three first-year UROP researchers on manufacturing agents.</span></li>
+        <li><span class="d">Mar 2026</span><span>Joined the University of Michigan to lead AI agents research on the General Motors Cognitive Manufacturing project.</span></li>
+        <li><span class="d">Dec 2025</span><span>Completed my Ph.D. in Mechanical Engineering at Carnegie Mellon University.</span></li>
+        <li><span class="d">Mar 2025</span><span>Presented spatter prediction work at TMS 2025, Las Vegas.</span></li>
+        <li><span class="d">Aug 2024</span><span>Three presentations at the Solid Freeform Fabrication Symposium, Austin.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2>Let's work together</h2>
+      <p class="lead">I am glad to talk with engineers, students and partners interested in trustworthy AI for manufacturing, from additive manufacturing to semiconductor and chemical processing.</p>
+    </div>
+    <div class="contact-card">
+      <p><b>Email</b><br><a href="mailto:fujah@umich.edu">fujah@umich.edu</a></p>
+      <p><b>Address</b><br>Department of Mechanical Engineering<br>University of Michigan, Ann Arbor, MI</p>
+      <p><b>Profiles</b><br><a href="https://scholar.google.com/citations?hl=en&user=a5dQu_MAAAAJ&view_op=list_works" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://www.linkedin.com/in/olabode-ajenifujah-77445451/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/bfujah" target="_blank" rel="noopener">GitHub</a> · <a href="Ajenifujah_CV.pdf" target="_blank" rel="noopener">CV</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Olabode T. Ajenifujah</span>
+    <span>Last updated November 2026</span>
+  </div>
+</footer>
+
+<dialog class="modal" id="modal" aria-labelledby="modalTitle">
+  <div class="modal-head"><div id="modalTitle"></div><button class="icon-btn" id="modalClose" aria-label="Close">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="modal-body" id="modalBody"></div>
+</dialog>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="liquidGlass" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="n"/>
+    <feGaussianBlur in="n" stdDeviation="2" result="nb"/>
+    <feDisplacementMap in="SourceGraphic" in2="nb" scale="38" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<script src="main.js"></script>
+<script src="gradient.js"></script>
+<script src="world.js"></script>
+<script src="floor.js"></script>
+</body>
+</html>
