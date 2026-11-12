@@ -477,3 +477,8 @@ a { color: var(--accent); }
 /* hero without the laser figure */
 .hero .wrap { grid-template-columns: 1fr; }
 .hero-card { max-width: 860px; }
+
+/* teaching: two-column course grid once the mentoring column is gone */
+.courses-2 { grid-template-columns: 1fr 1fr; }
+@media (max-width: 760px) { .courses-2 { grid-template-columns: 1fr; } }
+#teaching .wrap > div > p { max-width: 760px; }
