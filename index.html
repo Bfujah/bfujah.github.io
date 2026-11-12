@@ -79,10 +79,6 @@
       </div>
     </div>
 
-    <figure class="laser-fig reveal">
-      <canvas id="laserCanvas" aria-label="Animation of a laser scanning a powder bed, melting a track and ejecting spatter" role="img"></canvas>
-      <figcaption>Laser powder bed fusion: the laser melts a track and ejects spatter, the process my models predict and my agents optimize.</figcaption>
-    </figure>
   </div>
 </header>
 
@@ -202,6 +198,75 @@
       </aside>
     </div>
     <p class="muted" style="font-size:.85rem;margin-top:12px">Illustrative concept, not a deployed system. The welding, stamping and AM pieces are studied in my projects; machining, the shared floor and the robot loop are the next steps of the research program.</p>
+
+    <div class="assurance-block">
+      <span class="eyebrow">Research thrust · illustrative animation</span>
+      <h2>From failure to floor: how an agent earns its place</h2>
+      <p class="lead">Before any agent joins a floor like the one above, each failure it shows is reproduced by a test, scored like a process FMEA, fixed with a design control, and only then allowed one step closer to the floor. Every model update sends it back to re-qualification. This is planned work.</p>
+      <div class="aa" id="aa" aria-label="Animated agent assurance flow">
+        <div class="aa-top">
+          <div class="aa-floors" role="group" aria-label="Manufacturing floor">
+            <button class="aa-chip" data-f="0" aria-pressed="true">Automotive &amp; batteries</button>
+            <button class="aa-chip" data-f="1" aria-pressed="false">Aerospace &amp; AM</button>
+            <button class="aa-chip" data-f="2" aria-pressed="false">Semiconductor fab</button>
+            <button class="aa-chip" data-f="3" aria-pressed="false">Chemical plant</button>
+            <button class="aa-chip" data-f="4" aria-pressed="false">Pharmaceuticals</button>
+            <button class="aa-chip" data-f="5" aria-pressed="false">Electronics &amp; AI hardware</button>
+          </div>
+          <div class="aa-ctrl">
+            <button class="aa-btn" id="aa-play" aria-label="Pause animation">Pause</button>
+            <button class="aa-btn" id="aa-restart">Restart</button>
+          </div>
+        </div>
+
+        <div class="aa-steps">
+          <div class="aa-step" data-s="0">1 · Test</div>
+          <div class="aa-step" data-s="1">2 · Catalogue</div>
+          <div class="aa-step" data-s="2">3 · Remedy</div>
+          <div class="aa-step" data-s="3">4 · Deploy</div>
+        </div>
+
+        <div class="aa-stage">
+          <div class="aa-panel">
+            <h3>Test bench and failure catalogue</h3>
+            <div class="bench">
+              <div class="agent" id="agent">Agent</div>
+              <div>
+                <div class="items" id="items"></div>
+                <div class="items-lab" id="itemsLab"></div>
+                <div style="margin-top:8px; display:flex; gap:6px; flex-wrap:wrap">
+                  <span class="flag bad" id="flagBad">● failure found</span>
+                  <span class="flag good" id="flagGood">✓ passes re-test</span>
+                </div>
+              </div>
+              <div class="bench-note" id="task"></div>
+            </div>
+            <div class="card" id="card">
+              <div class="ttl" id="fmode"></div>
+              <div class="row"><span>Occurrence</span><div class="bar o"><i id="bo"></i></div><span id="vo"></span></div>
+              <div class="row"><span>Severity</span><div class="bar s"><i id="bs"></i></div><span id="vs"></span></div>
+              <div class="row"><span>Detectability</span><div class="bar d"><i id="bd"></i></div><span id="vd"></span></div>
+              <div class="rpn"><span>Risk priority (O × S × D)</span><span><b id="rpn">–</b> <span class="after" id="rpn2"></span></span></div>
+            </div>
+            <div class="remedy" id="remedy"></div>
+          </div>
+
+          <div class="aa-panel">
+            <h3>Deployment ladder</h3>
+            <ol class="ladder" id="ladder">
+              <li class="rung"><span class="n">1</span><div><div class="t">Offline benchmark</div><div class="g">catalogue tests passed, top risks controlled</div></div></li>
+              <li class="rung"><span class="n">2</span><div><div class="t">Shadow mode</div><div class="g">runs beside the plant; decisions logged, not used</div></div></li>
+              <li class="rung"><span class="n">3</span><div><div class="t">Advisory</div><div class="g">recommends; an engineer signs off</div></div></li>
+              <li class="rung"><span class="n">4</span><div><div class="t">Bounded autonomy</div><div class="g">low-risk, reversible decisions behind code gates</div></div></li>
+              <li class="rung"><span class="n">5</span><div><div class="t">Monitored operation</div><div class="g">ongoing checks against the catalogue</div></div></li>
+            </ol>
+            <div class="update" id="update"><span class="v">model v+1</span><span>update arrives: frozen benchmark rerun before it climbs again</span></div>
+            <div class="limit" id="limit"></div>
+          </div>
+        </div>
+        <div class="aa-cap">Illustrative scores. The flow, tests and controls follow the design rules in my welding, stamping and additive manufacturing studies.</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -323,7 +388,7 @@
   <figure><img src="agentam_overview.png" alt="AgentAM overview"><figcaption>From a plain-language request to a verified result: the agent, the local MCP tool server and the evaluation layer.</figcaption></figure>
   <figure><img src="agentam_architecture.png" alt="AgentAM architecture"><figcaption>Architecture: all surrogate inference runs locally; only parameter values and model outputs reach the language model.</figcaption></figure>
   <figure><img src="agentam_robust.png" alt="Margin-aware optimization"><figcaption>Margin-aware optimization trades a little spatter for distance from the lack-of-fusion boundary.</figcaption></figure>
-  <p class="note">O. T. Ajenifujah and A. Barati Farimani. AgentAM: an AI agent for spatter- and defect-aware process optimization in laser powder bed fusion. Under revision. <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv:2611.05171</a></p>
+  <p class="note">O. T. Ajenifujah and A. Barati Farimani. AgentAM: an AI agent for spatter- and defect-aware process optimization in laser powder bed fusion. Preprint; being revised for journal submission. <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv:2611.05171</a></p>
 </template>
 
 <template id="p-spatter">
@@ -409,7 +474,6 @@
   <div class="wrap">
     <span class="eyebrow">Publications</span>
     <h2>Publications and presentations</h2>
-    <p class="muted">Full list on <a href="https://scholar.google.com/citations?hl=en&user=a5dQu_MAAAAJ&view_op=list_works" target="_blank" rel="noopener">Google Scholar</a>.</p>
     <div class="pub-tabs" role="group" aria-label="Filter publications">
       <button class="filter" data-p="all" aria-pressed="true">All</button>
       <button class="filter" data-p="ai" aria-pressed="false">AI agents and LLMs</button>
@@ -420,7 +484,7 @@
     <div class="pubgroup" data-group>
       <h3>Preprints and under review</h3>
       <ol class="pubs">
-        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, &amp; Barati Farimani, A. <span class="t">AgentAM: an AI agent for spatter- and defect-aware process optimization in laser powder bed fusion.</span> Under revision. <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv:2611.05171</a><span class="badge a">first author</span></li>
+        <li data-t="ai am"><span class="me">Ajenifujah, O. T.</span>, &amp; Barati Farimani, A. <span class="t">AgentAM: an AI agent for spatter- and defect-aware process optimization in laser powder bed fusion.</span> Preprint; being revised for journal submission. <a href="https://arxiv.org/abs/2611.05171" target="_blank" rel="noopener">arXiv:2611.05171</a><span class="badge a">first author</span></li>
         <li data-t="am"><span class="me">Ajenifujah, O. T.</span>, Ogoke, F., Wirth, F., Beuth, J., &amp; Barati Farimani, A. <span class="t">Integrating multi-physics simulations and machine learning to define the spatter mechanism and process window in laser powder bed fusion.</span> <span class="v">Additive Manufacturing</span>, under review. <a href="https://arxiv.org/abs/2405.07823" target="_blank" rel="noopener">arXiv:2405.07823</a><span class="badge a">first author</span></li>
       </ol>
     </div>
@@ -559,8 +623,8 @@
 </svg>
 <script src="main.js"></script>
 <script src="gradient.js"></script>
-<script src="laser.js"></script>
 <script src="pool.js"></script>
 <script src="floor.js"></script>
+<script src="assurance.js"></script>
 </body>
 </html>
