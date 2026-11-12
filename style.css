@@ -61,7 +61,7 @@ section.alt { background: var(--bg-alt); }
 .icon-btn { background: none; border: 1px solid var(--line); color: var(--ink); width: 36px; height: 36px; border-radius: 10px; cursor: pointer; display: inline-grid; place-items: center; }
 .icon-btn:hover { border-color: var(--accent); }
 .menu-btn { display: none; }
-@media (max-width: 860px) {
+@media (max-width: 1080px) {
   .nav ul { display: none; position: absolute; top: 60px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 20px 16px; }
   .nav ul.open { display: flex; }
   .nav ul li a { display: block; padding: 10px 0; }
